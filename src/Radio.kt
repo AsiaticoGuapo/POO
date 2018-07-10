@@ -2,6 +2,7 @@ class Radio(    var encendido: Boolean = false,
                 var volumen: Int = 0,
                 var estacion: Double = 0.0,
                 var sintonia: String = "Fm") {
+<<<<<<< HEAD
     fun menu():String{
         return """
             ¿Que opcion desea?
@@ -24,6 +25,8 @@ class Radio(    var encendido: Boolean = false,
         }
 
     }
+=======
+>>>>>>> b63939dc631f07890789b2464942a34015eecd22
     fun subirVolumen(int: Int){
         volumen =+ int
         if( volumen > 100){
@@ -46,7 +49,20 @@ class Radio(    var encendido: Boolean = false,
     }else{
         sintonia = "Fm"
     }}
+<<<<<<< HEAD
 
+=======
+    fun encenderApagar(){
+        if(encendido == false){
+            println("Acaba de encender la radio")
+            encendido = true
+        }else{
+            println("Acaba de apagar la radio")
+            encendido = false
+        }
+
+    }
+>>>>>>> b63939dc631f07890789b2464942a34015eecd22
 
     override fun toString(): String {
         return """
@@ -58,5 +74,20 @@ class Radio(    var encendido: Boolean = false,
         """.trimIndent()
     }
 
+<<<<<<< HEAD
 
+=======
+    fun menu():String{
+        return """
+            ¿Que opcion desea?
+            Ingrese el numero de la opcion que quiere(1-6)
+            1.Cambiar de sintonia
+            2.Subir volumen
+            3.Bajar volumen
+            4.Cambiar FM/AM
+            5.Encender o apagar la radio
+            6.Exit
+            """.trimIndent()
+    }
+>>>>>>> b63939dc631f07890789b2464942a34015eecd22
 }

@@ -50,6 +50,7 @@ fun main(args: Array<String>){
 
                 }
 
+<<<<<<< HEAD
             }
             2.toString()->{
                 if(!radio.encendido){
@@ -110,3 +111,6 @@ fun main(args: Array<String>){
         }
     }while(isOn)
 }
+=======
+            }
+>>>>>>> b63939dc631f07890789b2464942a34015eecd22
