@@ -1,2 +1,0 @@
-package demo
-println("hi")
