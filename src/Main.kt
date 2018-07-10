@@ -53,7 +53,7 @@ fun main(args: Array<String>){
             }
             2.toString()->{
                 if(!radio.encendido){
-                    println("Por favor encienda la radio antes de usarla.")
+                    println("Antes de usar la radio debe usarla")
                 }else {
                     println("El volumen actual es ${radio.volumen}\nIngrese cuanto desea subir el volumen(MAX 100): ")
                     do {
