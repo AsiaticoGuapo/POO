@@ -50,67 +50,7 @@ fun main(args: Array<String>){
 
                 }
 
-<<<<<<< HEAD
+
             }
-            2.toString()->{
-                if(!radio.encendido){
-                    println("Antes de usar la radio debe usarla")
-                }else {
-                    println("El volumen actual es ${radio.volumen}\nIngrese cuanto desea subir el volumen(MAX 100): ")
-                    do {
-                        var subvol = readLine()!!
-                        var tres = false
-                        try {
-                            subvol.toInt()
-                            println("Volumen cambiado exitosamente.")
-                            radio.subirVolumen(subvol.toInt())
-                            tres = true
-                        } catch (e: Exception) {
-                            println("Necesitas ingresar un numero, intentalo de nuevo: ")
-                        }
-                    } while (!tres)
-                }
-            }
-            3.toString()->{
-                if(!radio.encendido){
-                    println("Por favor encienda la radio antes de usarla.")
-                }else {
-                    println("El volumen actual es ${radio.volumen}\nIngrese cuanto desea bajar el volumen(MIN 0): ")
-                    do {
-                        var bajvol = readLine()!!
-                        var tres = false
-                        try {
-                            bajvol.toInt()
-                            println("Volumen cambiado exitosamente.")
-                            radio.bajarVolumen(bajvol.toInt())
-                            tres = true
-                        } catch (e: Exception) {
-                            println("Necesitas ingresar un numero, intentalo de nuevo: ")
-                        }
-                    } while (!tres)
-                }
-            }
-            4.toString()->{
-                if(!radio.encendido){
-                    println("Por favor encienda la radio antes de usarla.")
-                }else {
-                    radio.cambiarSintonia()
-                    println("Cambiado exitosamente a ${radio.sintonia}")
-                }
-            }
-            5.toString()->{
-                radio.encenderApagar()
-            }
-            6.toString()->{
-                println("Gracias por utilizar el programa\nAdios.")
-                isOn = false
-            }
-            else->{
-                println("Debe ingresar un numero del 1 al 6.\nIntentelo de nuevo: ")
-            }
-        }
-    }while(isOn)
-}
-=======
-            }
->>>>>>> b63939dc631f07890789b2464942a34015eecd22
+
+
